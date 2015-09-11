@@ -9,7 +9,16 @@ var findAndReplace = function(phrase, word, replace){
 	return new_phrase;	
 }
 
-
-
-
-// str = str.replace(/\b([bcdfghjklmnpqrstvwxy]*qu)([a-z]*)\b/gi, "$2$1ay");
+$(document).ready(function(){
+	$("form#find_and_replace").submit(function(event){
+		var phrase = ($("input#phrase").val());
+		var word_to_find = ($("input#word_to_find").val());
+		var replacement = ($("input#replacement").val());
+		var result = findAndReplace(phrase, word_to_find, replacement);
+		
+		$(".new_phrase").text(result);
+		$("#result").show();
+		
+		event.preventDefault();
+	});
+});

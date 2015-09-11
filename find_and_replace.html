@@ -1,0 +1,31 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js"></script>
+
+  <title>Word Replayssrr</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Word Replayssr</h1>
+	  <h3>Enter the phrase you'd like to search:</h3>
+
+      <form id="find_and_replace">
+        <div class="form-group">
+          <label for="find_and_replace">Enter the phrase:</label>
+          <input class="form-control" type="text" id="phrase">
+          <label for="find_and_replace">Enter the word you want to find and replace:</label>
+          <input class="form-control" type="text" id="word_to_find">
+          <label for="find_and_replace">Enter the replacement word:</label>
+          <input class="form-control" type="text" id="replacement">
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div id="result">
+        <p>Here is your new phrase:<br></br><span class="new_phrase"></span></p>
+      </div>
+    </div>
+  </body>
+</html>

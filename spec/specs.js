@@ -19,5 +19,8 @@ describe("findAndReplace", function(){
 		expect(findAndReplace("\"Super-happy\" Slap Happy Pappy loves the happy, flappy clappy clowns", "Happy", "pappy")).to.equal
 							 ("\"Super-pappy\" Slap pappy Pappy loves the pappy, flappy clappy clowns")
 	});
-
+	
+	it("Takes a one word input with the search word contained in another word and finds and replaces the word", function(){
+		expect(findAndReplace("happypappy", "Happy", "pappy")).to.equal("pappypappy")
+	});
 });

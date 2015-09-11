@@ -6,6 +6,7 @@
 
 ## Description
 A handy little program that takes a phrase, a word, and a replacement word from a user and finds and replaces all occurrences of the word with the replacement word.
+The new phrase is echoed back to the user, along with a count of how many replacements occurred.
 
 
 ## Setup

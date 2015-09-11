@@ -1,7 +1,8 @@
 var findAndReplace = function(phrase, word, replace){
 	var reg = new RegExp(word, "gi");
+	var word_count = phrase.match(reg).length;
 	var new_phrase = phrase.replace(reg, replace);
-	return new_phrase;	
+	return [new_phrase, word_count];	
 }
 
 $(document).ready(function(){
@@ -11,7 +12,9 @@ $(document).ready(function(){
 		var replacement = ($("input#replacement").val());
 		var result = findAndReplace(phrase, word_to_find, replacement);
 		
-		$(".new_phrase").text(result);
+		$(".new_phrase").text(result[0]);
+    $(".found_word").text(word_to_find);
+    $(".instances").text(result[1]);
 		$("#result").show();
 		
 		event.preventDefault();

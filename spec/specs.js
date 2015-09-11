@@ -23,4 +23,8 @@ describe("findAndReplace", function(){
 	it("Takes a one word input with the search word contained in another word and finds and replaces the word", function(){
 		expect(findAndReplace("happypappy", "Happy", "pappy")).to.equal("pappypappy")
 	});
+	
+	it("Takes a one word input with the search word contained twice in another word and finds and replaces the word", function(){
+		expect(findAndReplace("happypappyhappy", "Happy", "pappy")).to.equal("pappypappypappy")
+	});
 });

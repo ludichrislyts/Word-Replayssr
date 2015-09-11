@@ -15,13 +15,14 @@
       <form id="find_and_replace">
         <div class="form-group">
           <label for="find_and_replace">Enter the phrase:</label>
-          <input class="form-control" type="text" id="phrase">
+          <input class="form-control" type="text" id="phrase" autofocus>
           <label for="find_and_replace">Enter the word you want to find and replace:</label>
           <input class="form-control" type="text" id="word_to_find">
           <label for="find_and_replace">Enter the replacement word:</label>
           <input class="form-control" type="text" id="replacement">
         </div>
         <button type="submit" class="btn">Submit</button>
+        <input type="reset" class="btn" value="Reset" onClick="window.location.reload()">
       </form>
       <div id="result">
         <p>Here is your new phrase:<br></br><span class="new_phrase"></span></p>

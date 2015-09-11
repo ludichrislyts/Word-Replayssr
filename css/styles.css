@@ -1,3 +1,21 @@
 #result{
 	display: none;
 }
+html, body {
+    height: 100%;
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #f80D0D !important;
+}
+#full-height{
+    height: 100%;
+}
+#main_display{
+    margin-top: 20px;
+    background-color: black !important;
+    opacity: 0.9;
+    height:100%;
+}

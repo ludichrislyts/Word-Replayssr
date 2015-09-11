@@ -8,7 +8,7 @@
   <title>Word Replayssrr</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="main_display">
       <h1>Welcome to Word Replayssr</h1>
 	  <h3>Enter the phrase you'd like to search:</h3>
       <form id="find_and_replace">
@@ -24,10 +24,9 @@
         <input type="reset" class="btn" value="Reset" onClick="window.location.reload()">
       </form>
       <div id="result">
-        <p>Here is your new phrase:<br></br><span class="new_phrase"></span></p><br>
-        <p style="color:red"><span class="found_word"></span> was found and replaced <span class="instances"></span> times</p>
+        <h3>Here is your new phrase:<br></br><span class="new_phrase"></span></h3><br>
+        <p style="color:white"><span class="found_word"></span> was found and replaced <span class="instances"></span> times</p>
       </div>
-      <a href="/" class="btn">HOME</a>
     </div>
   </body>
 </html>
